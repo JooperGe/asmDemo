@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.jooper.mylibrary.LibASMUtil;
+import com.jooper.mylibrary.LibActivity;
+
 public class MainActivity extends BaseActivity {
 
     @Override
@@ -15,7 +18,8 @@ public class MainActivity extends BaseActivity {
     }
 
     public void toSecond(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        new LibASMUtil().doTest("something...");
+        Intent intent = new Intent(this, LibActivity.class);
         startActivity(intent);
     }
 }

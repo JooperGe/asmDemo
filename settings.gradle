@@ -1,1 +1,3 @@
-include ':app', ':lifecycle-plugin', ':lifecycle-plugin'
+include ':app'
+include ':mylibrary'
+include ':lifecycle-plugin1'
